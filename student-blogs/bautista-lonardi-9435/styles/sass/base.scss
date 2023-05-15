@@ -1,0 +1,106 @@
+
+@import "./_variables.scss";
+
+@mixin styleCard {
+  display: flex;
+  flex-wrap: wrap;
+  word-break: break-word;
+  border: 1px solid $whiteColor;
+  padding: 10px;
+  width: auto;
+  border-radius: 4px;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: inherit;
+  font-family: monospace;
+  color: $whiteColor;
+}
+
+.container {
+  height: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  background: $dellColor;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    "header header header header"
+    "card card card card"
+    "notice notice notice notice";
+}
+
+.section-header {
+  grid-area: header;
+  width: 80%;
+  margin: auto;
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px;
+    ul {
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 16px;
+      li {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+    input {
+      padding: 8px;
+      border-radius: 4px;
+      width: 100%;
+    }
+  }
+}
+
+.section-cards {
+  grid-area: card;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
+  width: 80%;
+  margin: 1em auto;
+  .card {
+    @include styleCard;
+    img {
+      width: 100%;
+      border-radius: inherit;
+    }
+  }
+}
+
+.section-notice {
+  grid-area: notice;
+  width: 80%;
+  margin: 2em auto;
+  .card {
+    @include styleCard;
+    img {
+      width: 100%;
+      border-radius: inherit;
+    }
+    .main-notice {
+      background: $wildSand;
+      color: $dellColor;
+      padding: 0 2px;
+      border-radius: 4px;
+    }
+  }
+}

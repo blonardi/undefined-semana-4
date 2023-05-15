@@ -1,0 +1,38 @@
+// DESKTOP STYLES
+
+@import "./_variables.scss";
+
+@media screen and (min-width: 768px) {
+  
+  .section-header {
+    width: 80%;
+    margin: auto;
+    nav {
+      flex-direction: row;
+      input {
+        width: auto;
+      }
+    }
+  }
+
+  .section-cards {
+    flex-direction: row;
+  }
+
+  .section-notice {
+    margin: 2em auto;
+    .card{
+      img {
+        height: 640px;
+        object-fit: cover;
+      }
+    }  
+  }
+
+  .main-notice {
+    background: whitesmoke;
+    width: 100%;
+    color: #3f6212;
+    padding: 2px;
+  }
+}
