@@ -1,0 +1,57 @@
+@media screen and (min-width: 768px) {
+  .page {
+    margin: 0 auto;
+    width: 800px; }
+
+  h1,
+  h2,
+  strong {
+    color: #333;
+    color: aliceblue; }
+
+  a {
+    color: #e81c4f; }
+
+  main {
+    margin: 4em 0; }
+
+  header h1 {
+    margin-top: 0; }
+
+  .section-about-me {
+    margin: 3em 0; }
+
+  .section-about-me h2 {
+    margin: 1em 0; }
+
+  .section-about-me p {
+    font-size: 1.2rem; }
+
+  .section-link {
+    margin: 4em 0; }
+
+  .articles-link {
+    display: flex;
+    justify-content: space-around; }
+
+  .articles-link article p {
+    font-size: 1.2rem; }
+
+  .articles-link > article > a > img {
+    height: 2rem; }
+
+  .section-skills > article > ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 36px; }
+
+  .section-skills ul li svg {
+    width: auto;
+    height: 54px;
+    fill: #fff; } }
+
+/*# sourceMappingURL=desktop.css.map */

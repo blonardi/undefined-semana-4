@@ -1,0 +1,238 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  max-width: 300px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  background-color: #263D36;
+  line-height: 1.5;
+  color: aliceblue;
+}
+
+.page {
+  margin: 0 auto;
+  width: 300px;
+}
+
+.container-header {
+  background-size: cover;
+  text-align: center;
+  padding: 1em 2em;
+  line-height: 1.2;
+}
+.container-header__h1 {
+  margin: 310px auto;
+  font-weight: 300;
+  color: aliceblue;
+}
+.container-header__h1 h1 {
+  color: aliceblue;
+  font-weight: 300;
+  text-align: justify;
+  font-size: 3.5em;
+}
+.container-header__h2 h2 {
+  color: aliceblue;
+  font-weight: 300;
+  text-align: justify;
+  font-size: 2em;
+}
+
+.section-about-me {
+  margin: 3em 0;
+}
+.section-about-me h2 {
+  margin: 0.5em 0;
+}
+.section-about-me p {
+  font-size: 1.2rem;
+}
+
+.section-link {
+  margin: 4em 0;
+}
+.section-link h2 {
+  text-align: center;
+}
+.section-link .articles-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 18px;
+  margin-top: 24px;
+}
+.section-link .articles-link article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid aliceblue;
+  border-radius: 4px;
+}
+.section-link .articles-link article p {
+  font-size: 1.2em;
+}
+.section-link .articles-link article a > img {
+  height: 2em;
+}
+
+.section-skills__article h2 {
+  margin: 1em 0;
+}
+.section-skills__article p {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+.section-skills__article ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 36px;
+}
+.section-skills__article ul li {
+  list-style: none;
+  display: inline-block;
+  color: #fff;
+}
+.section-skills__article ul li svg {
+  width: auto;
+  height: 54px;
+  fill: #fff;
+}
+
+.section-form {
+  background-color: #fff;
+  padding: 8px;
+  margin: 8em auto;
+  max-width: 600px;
+  text-align: center;
+  border-radius: 16px;
+}
+.section-form .form-container {
+  padding: 20px;
+  background-color: #263d36;
+  border-radius: 16px;
+}
+.section-form .form-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.section-form .form-container form .form-group {
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+.section-form .form-container form .form-group input,
+.section-form .form-container form .form-group textarea {
+  padding: 10px;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+.section-form .form-container form .form-group input:focus-visible, .section-form .form-container form .form-group textarea:focus-visible {
+  border: 1px solid #c1c709;
+  outline: 1px solid #c1c709;
+}
+.section-form .form-container form .form-group .button {
+  background-color: #263D36;
+  color: #fff;
+  border: 0.5px solid #fff;
+  width: 60%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.4s ease;
+  font-family: monospace;
+}
+.section-form .form-container form .form-group .button:hover {
+  background-color: #fff;
+  color: #263d36;
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    max-width: 800px;
+    padding: 4em 1em;
+    background-color: #263D36;
+  }
+  .page {
+    margin: 0 auto;
+    width: 800px;
+  }
+  h1,
+  h2,
+  strong {
+    color: #333;
+    color: aliceblue;
+  }
+  a {
+    color: #e81c4f;
+  }
+  .container-header__h1 {
+    margin: 0;
+  }
+  main {
+    margin: 2em;
+  }
+  .section-about-me {
+    margin: 3em 0;
+  }
+  .section-about-me h2 {
+    margin: 1em 0;
+  }
+  .section-about-me p {
+    font-size: 1.2rem;
+  }
+  .section-link {
+    margin: 4em 0;
+  }
+  .section-link h2 {
+    text-align: start;
+  }
+  .section-link .articles-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .section-link .articles-link article {
+    width: 100%;
+  }
+  .section-link .articles-link article p {
+    font-size: 1.2rem;
+  }
+  .section-link .articles-link article a > img {
+    height: 2rem;
+  }
+  .section-skills > article > ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 36px;
+  }
+  .section-skills > article > ul li svg {
+    width: auto;
+    height: 54px;
+    fill: #fff;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
